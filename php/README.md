@@ -107,4 +107,11 @@ PHPUnit `composer phpstan` can be run:
 ps
 ```
 
+## Best practices used
+
+- Used PHPdocs where ever required.
+- Moved base/core functionality into abstract class which is extended into all individual items.
+- Followed PSR standards.
+- Extracted item name strings into class contants for reusability.
+
 **Thank you for checking this space**!
