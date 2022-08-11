@@ -1,29 +1,7 @@
 # GildedRose Kata - PHP Version
 
-See the [top level readme](../README.md) for general information about this exercise. This is the PHP version of the
-GildedRose Kata.
-
 ## Installation
 
-The kata uses:
-
-- [PHP 7.3 or 7.4 or 8.0+](https://www.php.net/downloads.php)
-- [Composer](https://getcomposer.org)
-
-Recommended:
-
-- [Git](https://git-scm.com/downloads)
-
-Clone the repository
-
-```sh
-git clone git@github.com:emilybache/GildedRose-Refactoring-Kata.git
-```
-
-or
-
-```shell script
-git clone https://github.com/emilybache/GildedRose-Refactoring-Kata.git
 ```
 
 Install all the dependencies using composer
@@ -48,11 +26,14 @@ The project uses composer to install:
 - `src` - contains the two classes:
     - `Item.php` - this class should not be changed
     - `GildedRose.php` - this class needs to be refactored, and the new feature added
+    - `ItemManager` - this abstract class has all the common functionality like increaseQuality, updateSellIn
+    - `items` - contains classes specific to available items in the shop along with a default item
+        - `AgedBrie`
+        - `BackstagePasses`
+        - `Sulfuras`
+        - `Normal`
 - `tests` - contains the tests
     - `GildedRoseTest.php` - starter test.
-        - Tip: ApprovalTests has been included as a dev dependency, see the PHP version of
-          the [Theatrical Players Refactoring Kata](https://github.com/emilybache/Theatrical-Players-Refactoring-Kata/)
-          for an example
 - `Fixture`
     - `texttest_fixture.php` this could be used by an ApprovalTests, or run from the command line
 
@@ -63,13 +44,6 @@ project run:
 
 ```shell script
 composer test
-```
-
-A Windows a batch file has been created, like an alias on Linux/Mac (e.g. `alias pu="composer test"`), the same
-PHPUnit `composer test` can be run:
-
-```shell script
-pu
 ```
 
 ### Tests with Coverage Report
