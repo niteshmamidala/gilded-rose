@@ -40,3 +40,9 @@ To run eslint
 ```sh
 npm run lint
 ```
+
+## Coverage
+
+```sh
+npm run test --coverage
+```
