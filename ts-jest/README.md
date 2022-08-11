@@ -33,3 +33,10 @@ To run all tests in watch mode
 ```sh
 npm run test:watch
 ```
+## Linting
+
+To run eslint
+
+```sh
+npm run lint
+```
