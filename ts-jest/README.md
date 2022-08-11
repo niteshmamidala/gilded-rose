@@ -46,3 +46,11 @@ npm run lint
 ```sh
 npm run test --coverage
 ```
+
+## Best practices used:
+
+- Refactored functionality by extracting nested if-else conditions based on item to smaller methods.
+- Used switch statement for differentiating item related conditions based on item name.
+- Declared item name string as constants for reusability.
+- Refactored base conditions like increaseQuality, updateSellIn into seperate methods for reusability and readability.
+- Used eslint for identifying problematic code patterns.
