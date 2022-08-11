@@ -8,7 +8,8 @@
     "pretest": "rimraf app/**/*.js test/**/*.js",
     "test": "jest",
     "test:watch": "jest --watchAll",
-    "lint": "eslint app/*"
+    "lint": "eslint app/*",
+    "coverage": "jest --coverage"
   },
   "license": "MIT",
   "private": true,
