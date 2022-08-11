@@ -32,7 +32,7 @@ The project uses composer to install:
         - `BackstagePasses`
         - `Sulfuras`
         - `Normal`
-- `tests` - contains the tests
+- `tests` - includes all the test cases included in parent Readme.md
     - `GildedRoseTest.php` - starter test.
 - `Fixture`
     - `texttest_fixture.php` this could be used by an ApprovalTests, or run from the command line
