@@ -107,4 +107,4 @@ PHPUnit `composer phpstan` can be run:
 ps
 ```
 
-**Happy coding**!
+**Thank you for checking this space**!
